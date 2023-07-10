@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1088</width>
+    <height>838</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1071</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>171</width>
+          <height>771</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton_full">
+           <property name="text">
+            <string>全加器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_half">
+           <property name="text">
+            <string>半加器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_mult">
+           <property name="text">
+            <string>多数表决器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_select">
+           <property name="text">
+            <string>优先级多数表决器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_com">
+           <property name="text">
+            <string>1位比较器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_encode">
+           <property name="text">
+            <string>4-2编码器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_decode">
+           <property name="text">
+            <string>2-4译码器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_select4">
+           <property name="text">
+            <string>4-1选择器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_old">
+           <property name="text">
+            <string>4位奇偶校验器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_content">
+           <property name="text">
+            <string>串口设置与说明</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>5</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>851</width>
+          <height>751</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentIndex">
+         <number>9</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>151</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>全加器</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>650</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>计算</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_2">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input A:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input B:</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>70</y>
+            <width>851</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;在数字电路中，全加器（Full Adder）是一种用于执行二进制加法运算的组合逻辑电路。它可以接受两个输入位和一个进位输入位，并产生一个输出和一个进位输出位。\n\n全加器的输入包括两个要相加的二进制位（通常称为A和B）以及一个进位输入位（通常称为Cin）。它的输出包括一个和位（通常称为Sum）和一个进位输出位（通常称为Cout）。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="svg_full_add">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>220</y>
+            <width>411</width>
+            <height>251</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="imgs/here.qrc">:/imgs/Full-adder_logic_diagram.svg</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_13">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>输出:</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="table_full_add">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>460</y>
+            <width>111</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="rowCount">
+           <number>8</number>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <row>
+           <property name="text">
+            <string>8</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>7</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>信号</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>151</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>半加器</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>70</y>
+            <width>841</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;半加器（Half Adder）是一种基本的数字电路，用于执行二进制数的简单相加操作，仅能对两个单独的二进制位进行相加，并产生和位（Sum）和进位位（Carry）两个输出位。半加器的输入包括两个要相加的二进制位（通常称为A和B）。它的输出包括一个和位（Sum）和一个进位位（Carry）。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_27">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>520</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input A:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_28">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>520</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input B:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_5">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>550</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_29">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>570</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>输出:</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="table_full_add_3">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>530</y>
+            <width>111</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="rowCount">
+           <number>2</number>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <row>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>信号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>610</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>计算</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_6">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>550</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>220</y>
+            <width>261</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="imgs/here.qrc">:/imgs/Half_Adder.svg</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>241</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>多数表决器</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>80</y>
+            <width>851</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;多数表决器（Majority Voter）是一种电路或算法，用于在多个输入中确定出现最多次数的信号。它基于“多数原则”，即选择出现次数最多的信号作为输出。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;在数字电路中，多数表决器通常用于冗余系统、容错系统或通信系统中，以提高系统的可靠性。它可以用于检测和纠正传输中的错误、选择正确的数据信号或判断状态。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_30">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input A:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_31">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input B:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_7">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>480</x>
+            <y>580</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>输出:</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="table_full_add_4">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>560</y>
+            <width>121</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="rowCount">
+           <number>1</number>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <row/>
+          <column>
+           <property name="text">
+            <string>信号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>650</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>计算</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_8">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_88">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input C:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_39">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>240</y>
+            <width>401</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="imgs/here.qrc">:/imgs/3-variable majority arbiter</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>391</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>优先级多数表决器</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>70</y>
+            <width>851</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;优先级多数表决器（Priority Majority Voter）是一种多数表决器的变种，具有优先级或权重的概念。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;它根据输入信号的优先级来确定输出信号。在优先级多数表决器中，每个输入信号都分配了一个优先级或权重。较高优先级的信号在多数表决中具有更高的权重。当多数表决进行时，系统会选择具有最高权重的信号作为输出。优先级多数表决器通常用于需要考虑不同信号的重要性或紧急性的系统中。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;例如，在安全系统中，高优先级的报警信号可能需要优先处理，而低优先级的信号可以暂时忽略。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_33">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input A:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_34">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input B:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_9">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_35">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>580</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>输出:</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="table_full_add_5">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>550</y>
+            <width>111</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="rowCount">
+           <number>1</number>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <row/>
+          <column>
+           <property name="text">
+            <string>信号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>640</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>计算</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_10">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_59">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_127">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input D:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_128">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input C:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_60">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>220</y>
+            <width>391</width>
+            <height>291</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="imgs/here.qrc">:/imgs/4 variable priority majority arbiter</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_5">
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>221</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>1位比较器</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>70</y>
+            <width>851</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;一位比较器（One-bit Comparator）是一种电路或算法，用于比较两个二进制位的大小关系。它确定两个输入位（通常称为A和B）之间的相对大小，并产生相应的比较结果。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;一位比较器的输出通常包括三个信号：&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;大于（Greater Than）：当输入位A大于输入位B时，该信号为高电平（1），否则为低电平（0）。&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;小于（Less Than）：当输入位A小于输入位B时，该信号为高电平（1），否则为低电平（0）。&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;等于（Equal）：当输入位A等于输入位B时，该信号为高电平（1），否则为低电平（0）。&lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_36">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input A:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_37">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input B:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_11">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_38">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>580</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>输出:</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="table_full_add_6">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>550</y>
+            <width>111</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="rowCount">
+           <number>1</number>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <row/>
+          <column>
+           <property name="text">
+            <string>信号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>640</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>计算</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_12">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>240</y>
+            <width>311</width>
+            <height>291</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="imgs/here.qrc">:/imgs/1-bit binary comparator.png</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_6">
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>221</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>4-2编码器</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>80</y>
+            <width>841</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4-2编码器（4-to-2 Encoder）是一种数字电路，用于将4个输入线路的不同组合映射到2个输出线路上。它可以将4个输入位的状态编码成2个输出位，其中仅有一个输出位处于高电平（1），其他输出位处于低电平（0）。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4-2编码器的输入有4个线路（通常称为A0、A1、A2和A3），输出有2个线路（通常称为Y0和Y1）。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_39">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input A:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_40">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input B:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_13">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_41">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>600</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>输出:</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="table_full_add_7">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>550</y>
+            <width>111</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="rowCount">
+           <number>2</number>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <row/>
+          <row/>
+          <column>
+           <property name="text">
+            <string>信号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>650</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>计算</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_14">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_129">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input D:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_61">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_130">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>550</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input C:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_62">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>580</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>230</y>
+            <width>511</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="imgs/here.qrc">:/imgs/Encoder_diagram.svg</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_7">
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>221</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>2-4译码器</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_7">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>80</y>
+            <width>841</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2-4译码器（2-to-4 Decoder）是一种数字电路，用于将2个输入线路的状态映射到4个输出线路上。它可以将2个输入位的状态译码成4个输出位，根据输入位的组合将一个输出位置高电平（1），其他输出位置低电平（0）。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2-4译码器的输入有2个线路（通常称为A0和A1），输出有4个线路（通常称为Y0、Y1、Y2和Y3）。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_42">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>540</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input A:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_43">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>540</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input B:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_15">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>570</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_44">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>580</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>输出:</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="table_full_add_8">
+          <property name="geometry">
+           <rect>
+            <x>590</x>
+            <y>510</y>
+            <width>111</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="rowCount">
+           <number>4</number>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <column>
+           <property name="text">
+            <string>信号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>630</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>计算</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_16">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>570</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>200</y>
+            <width>411</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="imgs/here.qrc">:/imgs/1_bit_Decoder_2-to-4_line.svg</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_8">
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>211</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>4-1选择器</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_8">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>70</y>
+            <width>851</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4-1选择器（4-to-1 Selector）是一种数字电路，用于从四个输入信号中选择一个信号作为输出。它根据控制信号选择要传递的输入信号，并将其作为输出信号。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4-1选择器的输入包括四个数据输入线路（通常称为D0、D1、D2和D3）和两个控制输入线路（通常称为S0和S1）。输出为一个数据输出线路（通常称为Y）。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_45">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input A:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_46">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input B:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_17">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_47">
+          <property name="geometry">
+           <rect>
+            <x>640</x>
+            <y>580</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>输出:</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="table_full_add_9">
+          <property name="geometry">
+           <rect>
+            <x>700</x>
+            <y>550</y>
+            <width>111</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="rowCount">
+           <number>1</number>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <row/>
+          <column>
+           <property name="text">
+            <string>信号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="pushButton_9">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>650</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>计算</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_18">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_131">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input D:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_63">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_64">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_132">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input C:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_179">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>S0</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_180">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>S1</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_92">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_93">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>160</y>
+            <width>241</width>
+            <height>391</height>
+           </rect>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="imgs/here.qrc">:/imgs/Mux_from_3_state_buffers.png</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_9">
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>321</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>4位奇偶校验器</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>831</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4位奇偶校验器（4-bit Parity Checker）是一种数字电路或算法，用于检查给定的4位二进制数据的奇偶校验。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;奇偶校验是一种错误检测方法，用于确定二进制数据中的位数（或字节）中是否存在奇数个高电平（1）或偶数个高电平（1）。奇偶校验器用于计算给定数据中的1的个数，并根据奇偶规则确定校验位的值。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;在4位奇偶校验器中，输入为4个二进制位（通常称为D0、D1、D2和D3），输出为一个校验位（通常称为P）。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;校验位的值取决于数据位中1的个数。如果数据位中1的个数为偶数个，则校验位被设置为0，表示偶校验；如果数据位中1的个数为奇数个，则校验位被设置为1，表示奇校验。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_48">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input A:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_49">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input B:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_19">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_50">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>590</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>输出:</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="table_full_add_10">
+          <property name="geometry">
+           <rect>
+            <x>580</x>
+            <y>560</y>
+            <width>111</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="rowCount">
+           <number>1</number>
+          </property>
+          <property name="columnCount">
+           <number>1</number>
+          </property>
+          <row/>
+          <column>
+           <property name="text">
+            <string>信号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>650</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>计算</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_20">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_90">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_177">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Input C:</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_91">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>590</y>
+            <width>42</width>
+            <height>26</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_178">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>560</y>
+            <width>54</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>input D:</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_10">
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>341</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>36</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>串口设置与说明</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>90</y>
+            <width>80</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>确认</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>70</y>
+            <width>81</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>串口端口：</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_10">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>140</y>
+            <width>841</width>
+            <height>611</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;PyQT6 和 Arduino UNO R3 数字电路实验&lt;/span&gt;&lt;/h1&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;该仓库包含使用 PyQT6 和 Arduino UNO R3 实现的 9 个常见数字电路实验。这些实验从逻辑的角度来实现了全加器、半加器、编码器、译码器等电路。&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;仓库地址：&lt;a href=&quot;https://github.com/Elonisme/Digital-Circuit-Logic-Realization-Experiment.git&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/Elonisme/Digital-Circuit-Logic-Realization-Experiment.git&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;环境要求&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;要运行这些实验，您需要以下环境：&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Python 3.11&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQT6 库&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Arduino UNO R3&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Arduino IDE&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;操作系统：Arch Linux&lt;/li&gt;&lt;/ul&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;安装步骤&lt;/span&gt;&lt;/h2&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;克隆或下载本仓库的代码到您的本地环境。&lt;/li&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;bashCopy code&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;git clone https://github.com/Elonisme/Digital-Circuit-Logic-Realization-Experiment.git&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px; font-family:'monospace';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;在计算机上安装 Python 3.11。&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;安装 PyQT6 库。您可以使用以下命令通过 pip 安装：&lt;/li&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;Copy code&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;pip install PyQt6&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px; font-family:'monospace';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;连接 Arduino UNO R3 开发板到计算机，并确保安装了 Arduino IDE。&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;打开 Arduino IDE，将对应的电路图加载到 Arduino IDE 中。&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;将 Arduino UNO R3 开发板与计算机进行连接，并上传相应的代码到开发板。&lt;/li&gt;&lt;/ol&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;串口通讯&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;本项目使用串口进行通讯来与 Arduino UNO R3 开发板进行数据交互。默认串口端口为 &lt;span style=&quot; font-family:'monospace';&quot;&gt;/dev/ttyACM0&lt;/span&gt;。如果您的串口端口不同，您可以根据实际情况在代码中进行相应的修改。&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;电路图&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;本仓库中的电路图是使用自绘图或维基百科插图制作的，它们提供了与数字电路实验相关的电路图示例。您可以在对应的实验文件夹中找到相应的电路图。&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;实验内容&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;以下是本仓库中包含的实验内容：&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;全加器（Full Adder）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;半加器（Half Adder）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;编码器（Encoder）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;译码器（Decoder）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;多数表决器（Majority Voter）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;优先级多数表决器（Priority Majority Voter）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1 位比较器（1-Bit Comparator）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4-2 编码器（4-to-2 Encoder）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2-4 译码器（2-to-4 Decoder）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4-1 选择器（4-to-1 Selector）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4 位奇偶校验器（4-Bit Parity Checker）&lt;/li&gt;&lt;/ol&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;使用许可&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;本软件使用 &lt;a href=&quot;https://www.gnu.org/licenses/gpl-3.0.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;GPLv3&lt;/span&gt;&lt;/a&gt; 协议。&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;贡献&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;如果您有任何问题、建议或改进意见，欢迎贡献您的代码或提出问题。请在 GitHub 上提交 issue 或 pull request，我们将非常乐意与您合作。&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;鸣谢&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;感谢您对该项目的兴趣和支持！祝您学习愉快！&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;参考资料&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;如果您对数字电路感兴趣，以下是一些有用的参考资料：&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;《数字逻辑与计算机设计》（M. Morris Mano，Michael D. Ciletti 著）&lt;/li&gt;
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;《数字系统设计与VHDL》（斯蒂芬·布朗，托马斯·费洛维蒂 著）&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1088</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="imgs/here.qrc"/>
+ </resources>
+ <connections/>
+</ui>

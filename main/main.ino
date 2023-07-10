@@ -96,8 +96,29 @@ void binaryComparator(int a, int b, int result[3]) {
 }
 
 int majorityVoter4bit(int a, int b, int c, int d) {
-  int sum = a + b + c + d;
-  if (sum >= 3) {
+  int win = 0, lose = 0;
+  if(a == 1){
+    win = win + 2;
+  }else{
+    lose = lose+2;
+  }
+  if(b == 1){
+    win = win + 1;
+  }else{
+    lose = lose+1;
+  }
+  if(c == 1){
+    win = win + 1;
+  }else{
+    lose = lose+1;
+  }
+  if(d == 1){
+    win = win + 1;
+  }else{
+    lose = lose+1;
+  }
+  
+  if (win >= lose) {
     return 1;
   } else {
     return 0;
