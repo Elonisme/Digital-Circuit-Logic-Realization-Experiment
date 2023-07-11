@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="imgs">
+    <file>4-bit parity detector.png</file>
+    <file>Encoder_diagram.svg</file>
+    <file>1-bit binary comparator.png</file>
+    <file>1_bit_Decoder_2-to-4_line.svg</file>
+    <file>4 variable priority majority arbiter</file>
+    <file>Mux_from_3_state_buffers.png</file>
+    <file>Full-adder_logic_diagram.svg</file>
+    <file>Half_Adder.svg</file>
+    <file>1_bit_Decoder_2-to-4_line.svg</file>
+    <file>3-variable majority arbiter</file>
+  </qresource>
+</RCC>
