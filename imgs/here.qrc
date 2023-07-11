@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="imgs">
+    <file>4-bit parity detector.png</file>
     <file>Encoder_diagram.svg</file>
     <file>1-bit binary comparator.png</file>
     <file>1_bit_Decoder_2-to-4_line.svg</file>

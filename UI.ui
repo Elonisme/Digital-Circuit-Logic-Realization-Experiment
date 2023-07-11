@@ -152,7 +152,7 @@
          </sizepolicy>
         </property>
         <property name="currentIndex">
-         <number>9</number>
+         <number>8</number>
         </property>
         <widget class="QWidget" name="page">
          <widget class="QLabel" name="label">
@@ -1779,6 +1779,22 @@ p, li { white-space: pre-wrap; }
           </property>
           <property name="text">
            <string>input D:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>290</y>
+            <width>411</width>
+            <height>201</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="imgs/here.qrc">:/imgs/4-bit parity detector.png</pixmap>
           </property>
          </widget>
         </widget>
